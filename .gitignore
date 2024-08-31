@@ -1,3 +1,10 @@
+# OS
+.DS_Store*
+
+# Media
+__static*
+__media*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -57,7 +64,7 @@ cover/
 
 # Django stuff:
 *.log
-local_settings.py
+local_overrides.py
 db.sqlite3
 db.sqlite3-journal
 
@@ -70,6 +77,9 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+
+# Pyright
+pyrightconfig.json
 
 # PyBuilder
 .pybuilder/
@@ -106,10 +116,8 @@ ipython_config.py
 #pdm.lock
 #   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
 #   in version control.
-#   https://pdm.fming.dev/latest/usage/project/#working-with-version-control
+#   https://pdm.fming.dev/#use-with-ide
 .pdm.toml
-.pdm-python
-.pdm-build/
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
 __pypackages__/
